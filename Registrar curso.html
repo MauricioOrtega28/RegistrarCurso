@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<p>
+  <h1>Formulario de registro de cursos</h1>
+</p>
+  
+<form method="post">
+  <p>
+    <div class="form-group">
+      Nombre del curso:
+        <label asp-for="Nombre"></label>
+        <input type="text" asp-for="Nombre" class="form-control">
+        <span class="text-red" asp-validation-for="Nombre"></span>
+    </div>
+  </p>
+  <p>
+    <div class="form-group">
+    Fecha de inicio:
+        <label asp-for="Foto"></label>
+        <input type="text" asp-for="FechaInicio" class="form-control">
+        <span class="text-red" asp-validation-for="FechaInicio"></span>
+    </div>
+  </p>
+  <p>
+    <div class="form-group">
+    Fecha de fin:
+        <label asp-for="FechaFin"></label>
+       <input type="text" asp-for="FechaFin" class="form-control">
+        <span class="text-red" asp-validation-for="FechaFin"></span>
+    </div>
+  </p>
+  <p>
+    <div class="form-group">
+    Horario:
+        <label asp-for="Horario"></label>
+      <input type="text" asp-for="Horario" class="form-control">
+        <span class="text-red" asp-validation-for="Horario"></span>
+    </div>
+  </p>
+  <p>
+    <div class="form-group">
+    Cursos disponibles:
+        <label asp-for="Disponibles"></label>
+      <input type="text" asp-for="Disponibles" class="form-control">
+        <span class="text-red" asp-validation-for="Disponibles"></span>
+    </div>
+  </p>
+  <p>
+    <div class="form-group">
+    Información del curso:
+        <label asp-for="Información"></label>
+      <textarea asp-for="Descripcion" class="form-control" cols="30" rows="10"></textarea>
+        <span class="text-red" asp-validation-for="Información"></span>
+    </div>
+  </p>
+  <p>
+    <div class="form-group">
+    Precio del curso:
+        <label asp-for="Precio"></label>
+      <input type="number" asp-for="Precio" class="form-control">
+        <span class="text-red" asp-validation-for="Precio"></span>
+    </div>
+  </p>
+  <p>
+    <div class="form-group">
+    Imagen:
+        <label asp-for="Imagen"></label>
+      <input type="text" asp-for="Imagen" class="form-control">
+        <span class="text-red" asp-validation-for="Imagen"></span>
+    </div>
+  </p>
+  <p>
+    <div class="form-group">
+    Profesor:
+        <label asp-for="Profesor"></label>
+      <input type="text" asp-for="Profesor" class="form-control">
+        <span class="text-red" asp-validation-for="Profesor"></span>
+    </div>
+  </p>
+
+  <p>
+    <button class="btn btn-primary">Registrar Curso</button>
+  </p>
+    
+</form>
+</html>
